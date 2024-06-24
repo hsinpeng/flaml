@@ -57,7 +57,7 @@ def train(train_X, train_y, model):
         automl = AutoML()
         # Specify automl goal and constraint
         automl_settings = {
-            "time_budget": 300,  # in seconds
+            "time_budget": 3600,  # in seconds
             "metric": "mse",
             "task": "regression",
             "estimator_list":['lgbm', 'rf', 'extra_tree', 'kneighbor'],

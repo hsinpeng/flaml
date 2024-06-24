@@ -12,7 +12,7 @@ def train(train, model):
         automl = AutoML()
         # Specify automl goal and constraint
         automl_settings01 = {
-            "time_budget": 300,  # in seconds
+            "time_budget": 600,  # in seconds
             #"metric": "roc_auc",
             "task": "classification",
             "estimator_list":['lgbm', 'rf', 'extra_tree', 'lrl1'],
